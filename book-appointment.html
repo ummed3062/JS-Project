@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h2>Book Appointment</h2>
+    <form onsubmit="return bookAppointment(event)">
+      <input type="text" id="patientName" placeholder="Patient Name" required>
+      <select id="doctor" required>
+        <option value="">Select Doctor</option>
+        <option>Dr. Sharma</option>
+        <option>Dr. Khan</option>
+        <option>Dr. Mehta</option>
+      </select>
+      <input type="date" id="appointmentDate" required>
+      <input type="time" id="appointmentTime" required>
+      <button type="submit">Book</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
